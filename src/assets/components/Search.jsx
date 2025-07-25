@@ -72,7 +72,7 @@ function Search({ onCountrySelect }) {
             </button>
           </div>
         </div>
-        <div className="md:w-full w-4/5 absolute h-fit md:top-0 top-10 flex justify-center mt-10">
+        <div className="w-full px-10 absolute h-fit md:top-0 top-0 flex justify-center mt-10">
           <Suggestion
             suggestion={suggestion}
             query={query}
