@@ -8,7 +8,7 @@ function Search({ onCountrySelect }) {
   const [countryList, setCountryList] = useState([]);
 
   useEffect(() => {
-    fetch("/data/countries.json")
+    fetch(import.meta.env.BASE_URL + "/data/countries.json")
       .then((response) => response.json())
       .then((json) => {
         setData(json);
@@ -53,7 +53,7 @@ function Search({ onCountrySelect }) {
   return (
     <>
       <div className="text-center mt-4 relative w-dvw md:block  flex justify-center flex-col">
-        <div className="md:w-full w-4/5 flex justify-center  ">
+        <div className="md:w-full w-full flex justify-center px-10 ">
           <div className="flex w-xl justify-center">
             <input
               value={query || ""}
